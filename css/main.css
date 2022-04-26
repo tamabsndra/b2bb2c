@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  background-color: white;
+  color: rgb(26, 26, 26);
+  font-family: "Poppins", sans-serif;
+  margin: 10px;
+}
+
+section a {
+  color: #041562;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#pengertian ul {
+  list-style: none;
+}
+/* NAVBAR */
+#navbar {
+  transition: 0.5s linear;
+}
+
+#navbarNavAltMarkup {
+  animation: 0.5s ease;
+}
+/* ------- */
+
+#pengertian {
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 80px 30px 100px 30px;
+}
+
+#pengertian .underline-title {
+  background: -webkit-linear-gradient(right, #11468f, #11468f);
+  height: 4px;
+  border-radius: 50px;
+  margin: -0.3rem 0 1rem 0;
+  width: 120px;
+}
+
+#market {
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px 30px;
+}
+
+#resume .underline-title {
+  background: -webkit-linear-gradient(right, #11468f, #11468f);
+  height: 4px;
+  border-radius: 50px;
+  margin: -0.3rem 0 1rem 0;
+  width: 120px;
+}
+
+#resume {
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 80px 30px 100px 30px;
+}
+
+#portofolio {
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 80px 30px 100px 30px;
+}
+
+#contact {
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 10px 10px 0px 0px;
+  padding: 80px 30px 180px 30px;
+  height: 100%;
+}
+
+.underline-title {
+  background: -webkit-linear-gradient(right, #11468f, #11468f);
+  height: 4px;
+  border-radius: 50px;
+  margin: -0.3rem 0 1rem 0;
+  width: 120px;
+}
+
+.card :hover {
+  transition: 0.3s ease-in;
+  box-shadow: 5px 5px #11468f;
+}
+
+.card :active {
+  transition: 0.3s ease-in;
+  box-shadow: 5px 5px #041562;
+}
+
+#resume .resume-title {
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #041562;
+  position: relative;
+}
+#resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#resume .resume-item h5 {
+  font-size: 16px;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#resume .resume-item ul {
+  padding-left: 20px;
+}
+#resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+#resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+#resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #11468f;
+  border: 2px solid #11468f;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #041562;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 24px;
+  color: whitesmoke;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: #11468f;
+  color: white;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}

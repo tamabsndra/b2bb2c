@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* COLOR PALLETE
+Cream : #ffffff
+Pink : #11468F
+Hijau : #041562
+Merah : #DA1212
+*/
+
+body {
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+#aboutme ul {
+  list-style: none;
+}
+/* NAVBAR */
+#navbar {
+  transition: 0.5s linear;
+}
+
+#navbarNavAltMarkup {
+  animation: 0.5s ease;
+}
+/* ------- */
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  #hero .container {
+    padding-top: 58px;
+  }
+}
+#hero h1 {
+  margin: 0;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-size: 60px;
+  color: #041562;
+}
+#hero h2 {
+  color: #da1212;
+  font-size: 22px;
+  margin-top: 10px;
+}
+#hero .btn-about {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 10px;
+  transition: 0.5s;
+  margin-top: 10px;
+  color: ivory;
+  background: #da1212;
+}
+#hero .btn-about:hover {
+  background: #11468f;
+}
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 992px) {
+  #hero:before {
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  #hero h2 {
+    font-size: 14px;
+  }
+  #hero .btn-about {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 7px;
+    transition: 0.5s;
+    margin-top: 5px;
+    color: ivory;
+    background: #da1212;
+  }
+}
